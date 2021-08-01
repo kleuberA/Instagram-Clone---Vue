@@ -1,0 +1,213 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #ccc;
+}
+.container{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	width: 90%;
+	height: 100vh;
+	margin: auto;
+	align-content: center;
+	justify-content: center;
+	grid-template-rows: 70vh;
+}
+.cellphones{
+	background: url(../assets/images/cellphone.png);
+	background-repeat: no-repeat;
+	background-size: 48vh;
+	justify-content: center;
+	text-align: center;
+	align-self: center;
+	grid-column: 1;
+	grid-row: 1;
+	height: 70vh;
+}
+.gifInstagram{
+	position: relative;
+	width: 28vh;
+	right: 5.9rem;
+	top: 3rem;
+}
+.instagramContainer{
+	width: 100%;
+	grid-column: 2;
+	grid-row: 1;
+	height: 70vh;
+}
+.instagramContainerStyle{
+	width: 50%;
+	justify-content: center;
+	text-align: center;
+	height: 47vh;
+	margin-bottom: 1vh;
+	display: inline-grid;
+	justify-items: center;
+	align-content: center;
+	align-items: center;
+	background: white;
+	border-radius: 5px;
+}
+.logo{
+	padding: 1vh 0;
+	cursor: pointer;
+}
+.formInstagram{
+	align-content: center;
+	justify-items: center;
+	align-items: center;
+	justify-content: center;
+	height: 35vh;
+	padding: 1vh 0;
+}
+.texto, .password{
+	width: 230px;
+	height: 5vh;
+	margin-bottom: 1vh;
+	background: lightgrey;
+	border: 1px solid darkgrey;
+	padding: 0 1vh;
+	border-radius: 4px;
+}
+.enter{
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	width: 230px;
+	height: 5vh;
+	cursor: pointer;
+	color: white;
+	background: cornflowerblue;
+	font-family: system-ui;
+	border: none;
+	font-size: 15px;
+	border-radius: 4px;
+}
+.ou{
+	display: flex;
+	width: 307px;
+	justify-content: center;
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	padding: 2vh 0;
+	font-family: system-ui;
+	color: lightgrey;
+}
+.hrEsquerda{
+	transform: rotate(90deg);
+	display: flex;
+	position: relative;
+	right: 2rem;
+}
+.hrDireita{
+	transform: rotate(90deg);
+	display: flex;
+	position: relative;
+	left: 2rem;
+}
+.facebook{
+	font-family: system-ui;
+	font-size: 16px;
+	color: cornflowerblue;
+	font-weight: 400;
+	cursor: pointer;
+}
+.changePassword{
+	font-family: system-ui;
+	font-size: 16px;
+	color: cornflowerblue;
+	font-weight: 400;
+	cursor: pointer;
+}
+.cadastro{
+	font-size: 15px;
+	width: 50%;
+	height: 5vh;
+	background: white;
+	border-radius: 4px;
+	justify-content: center;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	font-family: system-ui;
+	font-weight: 400;
+	color: royalblue;
+}
+.cadastrar{
+	font-weight: 500;
+}
+.cadastre{
+	color: cornflowerblue;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+}
+.obterAplicativo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	margin: 1vh 0;
+	align-content: center;
+	color: #1f1f1f;
+	font-family: system-ui;
+	font-size: 15px;
+}
+.aplicativos{
+	display: flex;
+	width: 50%;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+.aplicativos img{
+	cursor: pointer;
+}
+@media screen and (max-width: 375px) {
+
+	.container{
+		grid-template-columns: 80%;
+		width: 90%;
+		height: 100vh;
+		grid-template-rows: 70vh 78vh;
+	}
+	.cellphones{
+		background-size: 35vh;
+		height: 48vh;
+		position: relative;
+    	display: flex;
+    	bottom: -4rem;
+	}
+	.gifInstagram{
+		position: absolute;
+    	width: 21vh;
+    	right: 5rem;
+    	top: 1.6rem;
+		justify-content: center;
+    	text-align: center;
+	}
+	.instagramContainer{
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.instagramContainerStyle{
+		width: 100%;
+		height: 58vh;
+	}
+	.cadastro{
+		width: 100%;
+	}
+	.obterAplicativo{
+		width: 100%;
+	}
+	.aplicativos{
+		width: 100%;
+	}
+
+}
